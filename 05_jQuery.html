@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- jQuery를 CDN방식으로 이용 (내 코드보다 위쪽에 위치해야한다.) -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="js/05_jQuery.js"></script>
+</head>
+<body>
+    <h1>jQuery 연습입니다.</h1>
+    <div>
+        <ul>
+            <li class="region">서울</li>
+            <!-- 클래스는 한번에 여러엘리먼트에게 동일하게 사용할 수 있다. -->
+            <li id="haha">인천</li>
+            <!-- id값은 고유해야한다. 겹치면 에러난다. -->
+            <li class="region">강원</li>
+        </ul>
+        <ol>
+            <li id="hong">홍길동</li>
+            <li>신사임당</li>
+            <li>강감찬</li>
+        </ol>
+    </div>
+    <input type="button" value="클릭버튼" onclick="my_func()">
+</body>
+</html>

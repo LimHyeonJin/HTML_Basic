@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- HTML은 tag로 구성된 언어다. -->
+<!--
+    tag는 두가지 종류가 있다.
+    1. 시작태그와 닫는태그로 구성된 태그.
+    2. 독자적으로 시작태그만 있는 태그
+-->
+<!--
+    tag는 중첩구조를 가질 수 있다.
+    하나의 tag가 다른 tag들을 포함할 수 있다.
+    이때 부모와 자식의 관계가 성립된다.
+
+    tag와 tag안에 포함된 요소들을 통칭하면 : element
+    element안에 tag가 있다.
+    tag의 성질을 attribute, property라고 한다.
+
+    HTML문서는 크게 2가지 부분으로 구성된다.
+    <head> : 설정부분
+    <body> : web browser 에서 렌더링 할 데이터.
+
+    tag는 크게 두가지 종류가 있다.
+    1. block lever element
+        무조건 1라인을 차지
+    2. inline element
+        라인을 잡지않고 내용에 대한 영역만 차지
+-->
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*class이름이 myclass인것들을 찾아서 변경*/
+            .myclass {
+                color: aqua;
+                background-color: black;
+                font-size: 30pt;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class = "myclass">아우성</h1>
+        <h2>아우성</h2>
+        <h3 class = "myclass">아우성</h3>
+        <!-- span : 기능은 없지만 영역을 표시해줌 -->
+        <div>이것은 소리없는 아우성</div>
+        <!-- 기존의 속성이 아니라 새로운 속성을 만들고 싶을땐 'data-'를 앞에 넣어주면 된다. -->
+        <img src="image/coronavirus.jpg" width="300" data-author = "홍길동">
+        <!-- 모든 스타일링은 유지보수를 위해 CSS에서 해주는게 좋다. 여기서 직접 스타일을 수정하지 말자. -->
+        <!-- ul => unordered list -->
+        <!-- HTML은 공백을 인식하지 않음 공백을 주고싶으면 <br>태그를 이용하면 한줄이 띄어진다. -->
+        <ul>
+            <li class = "myclass">ul</li><li>서울</li><li>인천</li><li>제주</li>
+        </ul>
+        <!-- ol => ordered list -->
+        <ol>
+            <li>ol</li>
+            <li>홍길동</li>
+            <li>김길동</li>
+            <li>신사임당</li>
+        </ol>
+        <!-- hyper text (클릭 가능한 텍스트) -->
+        <a href="http://naver.com">클릭가능한 글자</a>
+        <!-- 사용자 입력 양식 -->
+        <input type="text" name="text2">
+        <input type="button" value="버튼버튼" onclick="alert()">
+        <input type="date">
+        <input type="color">
+    </body>
+</html>
